@@ -1,0 +1,23 @@
+Here are the key points about memory management in Golang based on the image:
+
+1. Two main functions for memory allocation: new() and make()
+
+2. new():
+   - Allocates memory but does not initialize it
+   - Returns a memory address
+   - Results in zeroed storage (memory is set to zero values)
+
+3. make():
+   - Allocates memory and initializes it
+   - Returns a memory address
+   - Results in non-zeroed storage (memory may contain arbitrary values)
+
+4. Both functions are used for memory allocation, but they differ in initialization and resulting memory state.
+
+5. The choice between new() and make() depends on whether you need initialized memory or not.
+
+6. Understanding these functions is crucial for effective memory management in Go programs.
+
+Garbage Collection happens automatically
+
+Outof Scope or nil

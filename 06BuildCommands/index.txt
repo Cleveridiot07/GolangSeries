@@ -1,0 +1,24 @@
+1.
+GOOS="windows" go build
+2.
+GOOS="linux" go build
+These commands are related to cross-compilation in Go. Here's a brief explanation:
+1.
+Cross-compilation in Go:
+Go supports easy cross-compilation, allowing you to build executables for different operating systems and architectures from a single development machine.
+2.
+GOOS environment variable:
+GOOS stands for "Go Operating System". It specifies the target operating system for which you want to compile your Go program.
+3.
+Building for Windows:
+GOOS="windows" go build compiles your Go program for Windows, regardless of your current development environment.
+4.
+Building for Linux:
+GOOS="linux" go build compiles your Go program for Linux, again regardless of your current development environment.
+5.
+Convenience:
+This feature allows developers to create executables for different platforms without needing to switch to a machine running that operating system.
+6.
+Output:
+The commands will generate executable files suitable for the specified target operating systems.
+These commands are particularly useful when you need to distribute your Go application to users on different operating systems. You can easily create versions for Windows, Linux, macOS, and other supported platforms from a single codebase.
