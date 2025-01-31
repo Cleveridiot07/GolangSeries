@@ -14,7 +14,8 @@ func main() {
 	result2 := proAdder(5,8,7,6,2,5,4,1);
 	fmt.Println("Procedural addition is ",result2);
 	
-
+	a, b := retTwoValues()
+	fmt.Println("Returned values are: ",a, b);
 
 	// Functions definitions are not allowed in another fuctions
 	// func greeterTwo(){
@@ -33,6 +34,10 @@ func proAdder(values ...int)int{
         total += value
     }
 	return total;
+}
+
+func retTwoValues() (int, string) {
+	return 10, "World"
 }
 
 
